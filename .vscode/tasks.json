@@ -20,7 +20,7 @@
       "type": "shell",
       "command": "pio run -t compiledb",
     },
-
+  
 
     // Upload raspberrypi-pico
     {
@@ -137,5 +137,18 @@
       "label": "build featheresp32",
       "type": "shell",
       "command": "pio run -e featheresp32",
+    },
+
+    // Upload teensy36
+    {
+      "label": "upload teensy36",
+      "type": "shell",
+      "command": "pio run -t upload -e teensy36",
+    },
+    // Build teensy36
+    {
+      "label": "build teensy36",
+      "type": "shell",
+      "command": "pio run -e teensy36",
     },
 ] }

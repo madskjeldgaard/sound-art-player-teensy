@@ -20,7 +20,7 @@
       "type": "shell",
       "command": "pio run -t compiledb",
     },
-  
+
 
     // Upload raspberrypi-pico
     {
@@ -124,5 +124,18 @@
       "label": "build adafruit_feather_esp32s2",
       "type": "shell",
       "command": "pio run -e adafruit_feather_esp32s2",
+    },
+
+    // Upload featheresp32
+    {
+      "label": "upload featheresp32",
+      "type": "shell",
+      "command": "pio run -t upload -e featheresp32",
+    },
+    // Build featheresp32
+    {
+      "label": "build featheresp32",
+      "type": "shell",
+      "command": "pio run -e featheresp32",
     },
 ] }

@@ -1,0 +1,2 @@
+- Overlapping sound files with crossfades
+- Turn STOP into pause
