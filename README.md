@@ -1,8 +1,8 @@
 # Sound Art Jukebox
 
-![A picture of the jukebox](juke1.jpeg) 
+![A picture of the jukebox](assets/juke1.jpeg) 
 
-![A picture of the insides of the jukebox](juke2.jpeg) 
+![A picture of the insides of the jukebox](assets/juke2.jpeg) 
 
 This is a sound art jukebox of sorts made with a Teensy microcontroller and a Teensy Audio Shield. The main use case for it is when you need to make a listening station of sorts for a sound art installation or similar situations. 
 
@@ -23,6 +23,16 @@ The player is plug and play. Give it power and press play and it will play infin
 1. The SD card should be formatted as FAT32.
 2. All files should be 16 bit 44.1khz wav files.
 3. Place the audio files in a folder in the root of the card named `audio`. This is where the player searches for audio files. All other folders are ignored.
+
+#### Converting audio files to the correct format
+
+Scripts are included with this project to make it easier to convert audio files to the correct format.
+
+Run it from the root of this project's folder like this to batch convert a folder of files:
+
+```bash
+./convert_all.sh /path/to/unconverted /path/to/converted
+```
 
 # Development
 
